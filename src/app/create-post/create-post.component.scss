@@ -1,0 +1,12 @@
+.outer-form {
+  @apply text-center my-5;
+}
+input {
+  @apply px-4 py-2 border rounded;
+}
+.form-data {
+  @apply flex items-center justify-center gap-x-5 my-5;
+}
+button {
+  @apply px-4 py-2 bg-[#ff7675] rounded;
+}

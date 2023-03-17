@@ -1,0 +1,23 @@
+<div class="outer-detail-post">
+  <!-- *ngIf="post$ | async as post" -->
+  <!-- <ng-container > -->
+  <ng-container>
+    <div class="form-data">
+      <p>Name: </p>
+      <input type="text" [(ngModel)]="post?.title && post.title">
+    </div>
+    <div class="form-data">
+      <p>Body: {{post?.body && post.body}}</p>
+    </div>
+    <div class="form-data">
+      <p>Author: </p>
+      <input type="text" [(ngModel)]="post?.name && post.name">
+    </div>
+  </ng-container>
+  <button (click)="save()">
+    Save
+  </button>
+  <button (click)="onBack()" class="btn-back">
+    Go back
+  </button>
+</div>

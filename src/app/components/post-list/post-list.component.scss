@@ -1,0 +1,12 @@
+.list-post {
+  @apply grid grid-cols-6 gap-10 mx-auto max-w-[1200px] my-10;
+}
+a {
+  @apply px-4 py-2 bg-[#ff7675] rounded;
+}
+.outer {
+  @apply my-10 text-center;
+}
+input {
+  @apply border px-4 py-2 rounded;
+}

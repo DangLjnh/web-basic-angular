@@ -1,0 +1,9 @@
+<div class="outer">
+  <input type="text" #search (keyup)="searchInput(search.value)">
+</div>
+<div class="outer">
+  <a [routerLink]="['create-post']">Add new post</a>
+</div>
+<div class="list-post containerr">
+  <app-post-item *ngFor="let post of posts$ | async" [post]="post" (delete)="onDelete($event)"></app-post-item>
+</div>

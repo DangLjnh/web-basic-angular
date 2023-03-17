@@ -1,0 +1,5 @@
+<ul class="dashboard">
+  <li class="dashboard-item" *ngFor="let header of headerList">
+    <a [routerLink]="header.url">{{header.name}}</a>
+  </li>
+</ul>

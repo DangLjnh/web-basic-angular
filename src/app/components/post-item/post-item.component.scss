@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.outer-button {
+  @apply mt-auto;
+}
+button {
+  @apply px-4 py-2 rounded  w-full;
+}
+a {
+  @apply cursor-pointer hover:text-red-900 transition-all;
+}
+.outer-item {
+  @apply h-[200px] border p-3 bg-red-200 flex flex-col flex-1 rounded;
+}

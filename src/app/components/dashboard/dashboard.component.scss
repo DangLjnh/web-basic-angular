@@ -1,0 +1,6 @@
+.dashboard {
+  @apply flex items-center justify-center gap-x-10 py-5 bg-slate-200;
+}
+.dashboard-item {
+  @apply hover:text-red-500 transition-all cursor-pointer;
+}

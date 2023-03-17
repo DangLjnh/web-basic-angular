@@ -1,0 +1,6 @@
+<div class="w-full outer-item">
+  <a [routerLink]="['/detail',post.slug]">{{post.title}}</a>
+  <div class="outer-button">
+    <button class="px-4 py-2 text-sm bg-red-400" (click)="delete.emit(post.id)">Delete</button>
+  </div>
+</div>

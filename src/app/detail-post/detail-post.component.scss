@@ -1,0 +1,15 @@
+.outer-detail-post {
+  @apply max-w-[1200px] flex items-center justify-center flex-col text-center mx-auto my-10;
+}
+button {
+  @apply px-4 py-2 rounded-md bg-blue-300;
+}
+.btn-back {
+  @apply bg-[#ff6b81] my-5;
+}
+input {
+  @apply px-4 py-2 border rounded;
+}
+.form-data {
+  @apply flex items-center justify-center gap-x-5 mb-5;
+}
