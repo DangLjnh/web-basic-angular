@@ -8,5 +8,12 @@ if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+platformBrowserDynamic()
+  .bootstrapModule(AppModule)
+  .catch((err) => console.error(err));
+
+// const fruits = [1, 2, 3, 2];
+// function checKString(name: any) {
+//   return typeof name === 'string';
+// }
+// console.log(fruits.some(checKString));

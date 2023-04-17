@@ -12,5 +12,5 @@ a {
   @apply cursor-pointer hover:text-red-900 transition-all;
 }
 .outer-item {
-  @apply h-[200px] border p-3 bg-red-200 flex flex-col flex-1 rounded;
+  @apply border p-3 bg-red-200 flex flex-col flex-1 rounded h-full;
 }

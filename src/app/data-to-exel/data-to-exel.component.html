@@ -1,0 +1,23 @@
+<div class="containerr">
+  <p>data-to-exel works!</p>
+  <table>
+    <thead>
+      <th>ID</th>
+      <th>Tên</th>
+      <th>Email</th>
+      <th>Phone</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.phone}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button style="cursor: pointer; padding: 5px 10px; background-color: aquamarine;border-radius: 4px; margin-top: 10px;"
+    (click)="exportExcel()">
+    Export excel
+  </button>
+</div>

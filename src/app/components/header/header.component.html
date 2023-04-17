@@ -1,0 +1,10 @@
+<p>Count: {{itemsQuantity}}</p>
+<p>Total price: {{totalPrice(cart.items) | async}}</p>
+<div *ngFor="let cart of cart.items">
+  <p>Name: {{cart.name}}</p>
+  <button (click)="onMinusQuantity(cart)">-</button>
+  <p>Quantity: {{cart.quantity}}</p>
+  <button (click)="onPlusQuantity(cart)">+</button>
+  <button (click)="clearProduct(cart.slug)">X</button>
+</div>
+<button (click)="onClearCart()">Clear cart</button>

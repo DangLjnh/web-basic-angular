@@ -1,6 +1,9 @@
 <div class="w-full outer-item">
   <a [routerLink]="['/detail',post.slug]">{{post.title}}</a>
   <div class="outer-button">
-    <button class="px-4 py-2 text-sm bg-red-400" (click)="delete.emit(post.id)">Delete</button>
+    <button class="px-4 py-2 my-3 text-sm bg-red-400" (click)="delete.emit(post.id)">Delete</button>
+    <button class="px-4 py-2 my-3 text-sm bg-red-400" (click)="edit.emit(post)">Edit</button>
+
+    <button class="px-4 py-2 text-sm bg-red-400" (click)="addToCart.emit(post)">Add to cart</button>
   </div>
 </div>

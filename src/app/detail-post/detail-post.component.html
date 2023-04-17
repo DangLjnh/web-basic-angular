@@ -4,14 +4,14 @@
   <ng-container>
     <div class="form-data">
       <p>Name: </p>
-      <input type="text" [(ngModel)]="post?.title && post.title">
+      <input type="text" [(ngModel)]="post.title && post.title">
     </div>
     <div class="form-data">
-      <p>Body: {{post?.body && post.body}}</p>
+      <p>Body: {{post.body && post.body}}</p>
     </div>
     <div class="form-data">
       <p>Author: </p>
-      <input type="text" [(ngModel)]="post?.name && post.name">
+      <input type="text" [(ngModel)]="post.name && post.name">
     </div>
   </ng-container>
   <button (click)="save()">

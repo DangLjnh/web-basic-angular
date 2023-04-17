@@ -2,4 +2,5 @@
   <li class="dashboard-item" *ngFor="let header of headerList">
     <a [routerLink]="header.url">{{header.name}}</a>
   </li>
+  <app-header [cart]="cart"></app-header>
 </ul>
